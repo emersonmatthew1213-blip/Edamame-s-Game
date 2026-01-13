@@ -1,34 +1,30 @@
 :root{
-  --bg-top: #cfe9ff;
-  --bg-bottom: #8fc7ff;
-  --panel: #ffffffcc;
+  --sky-top: #bfe9ff;
+  --sky-bottom: #8fd1ff;
+  --city-sil: #b7c7d6;
+  --platform-top: #dee6ef;
+  --platform-bottom: #c0c9d6;
   --accent: #ff7a7a;
-  --muted: #334155;
-  --ground: #2e3440;
-  --platform: #4b5563;
-  --player: #ffd166;
+  --text: #1f2937;
+  --ui-bg: rgba(255,255,255,0.6);
 }
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
 body{
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
-  background: linear-gradient(180deg,var(--bg-top),var(--bg-bottom));
-  color:var(--muted);
+  background: linear-gradient(180deg,var(--sky-top),var(--sky-bottom));
+  color:var(--text);
   display:flex;flex-direction:column;align-items:center;padding:18px;
 }
 header{width:100%;max-width:1100px;display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
-h1{margin:0;font-weight:600}
-.controls{font-size:13px;color:rgba(51,65,85,0.8)}
+h1{margin:0;font-weight:700}
+.controls{font-size:13px;color:rgba(31,41,55,0.8)}
 main{width:100%;max-width:1100px}
-#gameCanvas{width:100%;height:auto;border-radius:12px;box-shadow:0 18px 40px rgba(16,24,40,0.25);display:block;background:transparent}
+#gameCanvas{width:100%;height:auto;border-radius:12px;box-shadow:0 20px 60px rgba(16,24,40,0.12);display:block;background:transparent}
 #hud{margin-top:8px;display:flex;justify-content:space-between;align-items:center}
 #location{font-weight:600}
-#message{background:var(--panel);padding:8px;border-radius:8px;max-width:720px}
+#message{background:var(--ui-bg);padding:8px;border-radius:8px;max-width:720px}
 .hidden{display:none}
-footer{margin-top:10px;color:rgba(51,65,85,0.7)}
+footer{margin-top:10px;color:rgba(31,41,55,0.6);font-size:13px}
 
-/* mobile tweaks */
-@media(max-width:560px){
-  header{flex-direction:column;align-items:flex-start;gap:6px}
-  #gameCanvas{border-radius:8px}
-}
+@media(max-width:560px){header{flex-direction:column;align-items:flex-start;gap:6px}#gameCanvas{border-radius:8px}}

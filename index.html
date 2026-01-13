@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hawkins Platformer</title>
+  <title>Hawkins — Daytime Platformer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Hawkins Platformer</h1>
-    <div class="controls">A / ← : left · D / → : right · W / ↑ / Space: jump · M: mute</div>
+    <h1>Hawkins — Rescue</h1>
+    <div class="controls">A / ← : left · D / → : right · W / ↑ / Space: jump · E: interact · M: mute</div>
   </header>
   <main>
     <canvas id="gameCanvas" width="960" height="540"></canvas>
     <div id="hud">
-      <div id="location">Hawkins, Indiana</div>
+      <div id="location">Day — Hawkins</div>
       <div id="message" class="hidden"></div>
     </div>
+    <div id="cutsceneUI" class="hidden"></div>
   </main>
   <footer>
-    <small>Converted to platformer — modern visuals</small>
+    <small>Daytime, city background, objectives, and an opening cutscene</small>
   </footer>
   <script src="script.js"></script>
 </body>

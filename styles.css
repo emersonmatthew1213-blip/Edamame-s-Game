@@ -1,0 +1,83 @@
+:root{
+  --bg-1:#0b1220;
+  --panel:#0f1724;
+  --accent:#f4d35e;
+  --muted:#9aa4b2;
+  --grass:#1f6f2f;
+  --road:#7a7a7a;
+  --house:#c24b4b;
+  --tree:#145214;
+  --water:#125a83;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Press Start 2P", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg-1),#061021 80%);
+  color:#e6eef6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+main{
+  width: 960px;
+  max-width:calc(100% - 40px);
+  text-align:center;
+}
+
+h1{
+  font-size:14px;
+  margin:0 0 8px 0;
+  color:var(--accent);
+  text-shadow:0 1px 0 rgba(0,0,0,.6);
+}
+
+#hud{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:8px;
+  color:var(--muted);
+  font-size:10px;
+}
+
+#gameCanvas{
+  width: 960px; /* upscale for pixelated look */
+  height: 720px;
+  max-width: 100%;
+  display:block;
+  margin:0 auto;
+  background: linear-gradient(#8fb6e6,#6aa0d8 40%);
+  border:6px solid #091021;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+#dialog{
+  margin-top:10px;
+  min-height:36px;
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.05);
+  padding:10px;
+  color:#fff;
+  font-size:12px;
+  max-width:960px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:6px;
+}
+
+.hidden{display:none}
+
+footer{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:11px;
+}
+
+button, input{font-family:inherit}

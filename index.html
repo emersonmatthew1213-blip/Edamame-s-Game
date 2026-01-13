@@ -3,22 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hawkins Explorer — 1980s</title>
+  <title>Hawkins Platformer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <h1>Hawkins Platformer</h1>
+    <div class="controls">A / ← : left · D / → : right · W / ↑ / Space: jump · M: mute</div>
+  </header>
   <main>
-    <h1>Hawkins, Indiana — Explorer (1980s)</h1>
+    <canvas id="gameCanvas" width="960" height="540"></canvas>
     <div id="hud">
-      <div id="location">Welcome to Hawkins</div>
-      <div id="controls">Arrows / WASD: move · Space: interact · M: mute</div>
+      <div id="location">Hawkins, Indiana</div>
+      <div id="message" class="hidden"></div>
     </div>
-    <canvas id="gameCanvas" width="480" height="360"></canvas>
-    <div id="dialog" class="hidden"></div>
-    <footer>
-      <small>Made for Em by Copilot-style assistant · Retro vibes · Hawkins, IN</small>
-    </footer>
   </main>
+  <footer>
+    <small>Converted to platformer — modern visuals</small>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
